@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: var(--color-background-main);
+    color: var(--color-text-main);
+}
+
+.logoLink {
+    display: flex;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+    margin-left: 50px;
+    filter: invert(1);
+}
