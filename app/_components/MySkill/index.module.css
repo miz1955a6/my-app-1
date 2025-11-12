@@ -1,0 +1,15 @@
+.skill {
+    margin: 10px auto;
+    padding: 0px 150px;
+}
+
+.balls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.ball {
+    margin: 50px;
+}

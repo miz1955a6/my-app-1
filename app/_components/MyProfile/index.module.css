@@ -1,0 +1,14 @@
+.profile {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myPhoto {
+    margin: 0 75px;
+    border-radius: 10%;
+    mask-image: radial-gradient(closest-side, white 50%, transparent 100%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+}
