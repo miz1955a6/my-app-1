@@ -9,7 +9,7 @@ export default function Home() {
       <Space />
       <ul className={styles.cards}>
         <li>
-          <Link href="/" className={styles.cardLink}>
+          <Link href="/profile" className={styles.cardLink}>
             <Card
               title="PROFILE"
               theme="royalblue"
@@ -17,7 +17,7 @@ export default function Home() {
           </Link>
         </li>
         <li>
-          <Link href="/" className={styles.cardLink}>
+          <Link href="/works" className={styles.cardLink}>
             <Card
               title="WORKS"
               theme="whitesmoke"
@@ -25,7 +25,7 @@ export default function Home() {
           </Link>
         </li>
         <li>
-          <Link href="/" className={styles.cardLink}>
+          <Link href="/contact" className={styles.cardLink}>
             <Card
               title="CONTACT"
               theme="darkslateblue"

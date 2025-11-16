@@ -1,0 +1,12 @@
+.workCard {
+    background-color: antiquewhite;
+    width: 29vw;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    opacity: 0.8;
+}
+
+.selected {
+    opacity: 0.1;
+    transition: all 0.5s;
+}

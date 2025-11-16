@@ -1,0 +1,25 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.addressWrapper {
+    border: 1px solid royalblue;
+    padding: 20px;
+}
+
+.or {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.formWrapper {
+    /*background-color: antiquewhite;*/
+    border: 1px solid royalblue;
+    width: 80vh;
+    height: 50vh;
+}

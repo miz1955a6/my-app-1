@@ -1,0 +1,20 @@
+.contactAddress {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+.dictItemWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dictItemWrapper dt {
+    width: 100px;
+}
+
+.dictItemWrapper dd {
+    width: 300px;
+}

@@ -5,7 +5,7 @@ import Title from "../_components/Title";
 
 export default function Page() {
     return (
-        <div className={styles.profile}>  
+        <div className={styles.profile}>
             <Title title="PROFILE" />
             <MyProfile />
             <Title title="SKILLS" />

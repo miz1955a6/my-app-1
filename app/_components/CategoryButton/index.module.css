@@ -1,0 +1,34 @@
+.categoryRadio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.radioItem input {
+    appearance: none;
+}
+
+.radioItem input:checked+label {
+    opacity: 1;
+}
+
+.radioItem label {
+    display: block;
+    text-align: center;
+    width: 125px;
+    padding: 5px;
+    margin: 0 1px;
+    color: white;
+    background-color: royalblue;
+    font-size: 20px;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.radioItem:first-child label {
+    border-radius: 5% 0 0 5%;
+}
+
+.radioItem:last-child label {
+    border-radius: 0 5% 5% 0;
+}

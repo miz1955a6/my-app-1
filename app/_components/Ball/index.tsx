@@ -14,7 +14,7 @@ type Props = {
 };
 
 export default function Ball({skillName, pathName, level, description, className}: Props) {
-    const [flag, setFlag] = useState(false);
+    const [flag, setFlag] = useState<boolean>(false);
     const handleEnter = () => setFlag(true);
     const handleLeave = () => setFlag(false);
     return (
