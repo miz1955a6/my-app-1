@@ -2,6 +2,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: 3px solid royalblue;
     background-color: white;
     position: relative;
     opacity: 0.5;
@@ -9,9 +10,12 @@
 
 .ball:hover {
     opacity: 1;
-    border-radius: 0%;
+    border-radius: 10%;
+    border: 1px solid royalblue;
     transition: all 0.2s;
-    filter: drop-shadow(0 0 10px white);
+    background-color: rgb(0 0 0 / 0.5);
+    color: white;
+    filter: drop-shadow(0 0 20px darkslateblue);
 }
 
 .icon {
@@ -44,5 +48,5 @@
     font-weight: bold;
     text-align: center;
     margin: 10px;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed royalblue;
 }

@@ -37,9 +37,10 @@
 .required {
     background-color: black;
     color: aquamarine;
-    padding: 1px 8px;
+    padding: 1px 5px;
     border-radius: 5px;
     border: 1px solid aquamarine;
+    margin: 0 10px;
 }
 
 .contactFormSubmit {
@@ -51,8 +52,14 @@
     width: 100px;
     height: 40px;
     background-color: black;
-    color: white;
+    color: darkslateblue;
     font-size: 24px;
     margin: 10px 0;
-    border: 1px solid royalblue;
+    border: 1px solid darkslateblue;
+}
+
+.contactFormSubmit button:hover {
+    background-color: darkslateblue;
+    color: white;
+    transition: all 0.3s;
 }

@@ -9,6 +9,8 @@
 }
 
 .radioItem input:checked+label {
+    background-color: darkslateblue;
+    color: white;
     opacity: 1;
 }
 
@@ -18,11 +20,12 @@
     width: 125px;
     padding: 5px;
     margin: 0 1px;
-    color: white;
-    background-color: royalblue;
+    color: darkslateblue;
+    background-color: black;
+    border: 1px solid darkslateblue;
     font-size: 20px;
     transition: 0.5s;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .radioItem:first-child label {
