@@ -8,7 +8,7 @@ export default function Page() {
             <div className={styles.addressWrapper}>
                 <ContactAddress />
             </div>
-            <div className={styles.or}>OR (The form is currently under construction.)</div>
+            <div className={styles.or}><del>OR</del> (The form is currently under construction.)</div>
             <div className={styles.formWrapper}>
                 <ContactForm />
             </div>

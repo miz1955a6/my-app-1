@@ -1,5 +1,7 @@
 import styles from "./index.module.css";
 import Image from "next/image";
+import { zenOldMincho } from "@/app/fonts";
+import cx from "classnames";
 
 type Work = {
     workName: string,
@@ -11,7 +13,7 @@ type Work = {
 
 export default function ShowWork({workName, pathName, description, link, category}: Work) {
     return (
-        <div className={styles.showWork}>
+        <div className={cx(styles.showWork, zenOldMincho.className)}>
             <div className={styles.workImage}>
                 <Image
                     src={"/" + pathName}
