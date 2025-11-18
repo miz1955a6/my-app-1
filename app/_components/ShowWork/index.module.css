@@ -9,12 +9,13 @@
 
 .workImage {
     width: 80%;
-    aspect-ratio: 1 / 1;
-    position: relative
+    height: 500px;
+    /*aspect-ratio: 1 / 1;*/
+    position: relative;
 }
 
-.workImage Image {
-    object-fit: cover;
+.workImageStyle {
+    object-fit: contain;
 }
 
 .workName {
@@ -26,4 +27,27 @@
 .workDescription {
     font-size: 20px;
     color: white;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologyImageWrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 1px;
+    backdrop-filter: blur(12px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid royalblue;
+    border-radius: 5px;
+}
+
+.technologyImage {
+    object-fit: contain;
+    padding: 2px;
 }

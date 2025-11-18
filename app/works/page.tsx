@@ -7,12 +7,18 @@ import { works } from "@/app/_data/works";
 import CategoryButton from "../_components/CategoryButton";
 import ShowWork from "../_components/ShowWork";
 
+type Technology = {
+    technologyName: string,
+    technologyPath: string
+}
+
 type Work = {
     workName: string,
     pathName: string,
     description: string,
     link: string,
-    category: string
+    category: string,
+    technologies: Technology[]
 };
 
 export default function Page() {

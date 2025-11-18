@@ -6,3 +6,10 @@
     scrollbar-color: black transparent;
     scrollbar-gutter: stable overlay;
 }
+
+.movingLine {
+    width: 300px;
+    height: 4px;
+    background: linear-gradient(90deg, #4d6bff, #a2b3ff);
+    transition: transform 0.1s linear;
+}

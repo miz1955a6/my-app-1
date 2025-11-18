@@ -1,9 +1,14 @@
 .workCard {
-    background-color: antiquewhite;
-    width: 29vw;
-    aspect-ratio: 1 / 1;
+    background-color: black;
+    width: 19vw;
+    height: 19vw;
+    /*aspect-ratio: 1 / 1;*/
     position: relative;
     opacity: 0.8;
+}
+
+.workCardImageStyle {
+    object-fit: cover;
 }
 
 .selected {

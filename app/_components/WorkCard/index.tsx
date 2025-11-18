@@ -21,6 +21,7 @@ export default function WorkCard({workName, pathName, description, link, categor
             <Image
                 src={"/" + pathName}
                 alt={workName}
+                className={styles.workCardImageStyle}
                 fill
                 priority
             />

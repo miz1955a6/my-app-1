@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # profile data
-/app/_data/resume.ts
+# /app/_data/resume.ts
