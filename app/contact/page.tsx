@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import ContactAddress from "../_components/ContactAddress";
-import ContactForm from "../_components/ContactForm";
+import ContactGoogleForm from "../_components/ContactGoogleForm";
 
 export default function Page() {
     return (
@@ -8,9 +8,9 @@ export default function Page() {
             <div className={styles.addressWrapper}>
                 <ContactAddress />
             </div>
-            <div className={styles.or}><del>OR</del> (The form is currently under construction.)</div>
+            <div className={styles.or}>OR</div>
             <div className={styles.formWrapper}>
-                <ContactForm />
+                <ContactGoogleForm />
             </div>
         </div>
     );
