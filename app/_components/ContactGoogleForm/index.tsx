@@ -1,16 +1,21 @@
 "use client";
 
 import styles from "./index.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function ContactGoogleForm() {
-    const [flag, setFlag] = useState<boolean>(true);
-    const handleSubmit = () => setFlag(false);
+    const [flag, setFlag] = useState<boolean>(false);
+    const iframeRef = useRef<HTMLIFrameElement | null>(null);
+    const handleIframeLoad = () => {
+        const iframe = iframeRef.current;
+        if (!iframe || iframe.src === "about:blank") return;
+        setFlag(true);
+    };
     return (
         <>
-        {flag && (
+        {!flag && (
             <div className={styles.contactForm}>
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScOzFDLBpMjpmbGyppixJhIo3sx1lvOAeq82gr_4YNi0ndHcw/formResponse" method="POST" id="mG61Hd">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScOzFDLBpMjpmbGyppixJhIo3sx1lvOAeq82gr_4YNi0ndHcw/formResponse" method="POST" id="mG61Hd" target="hiddenIframe">
                     <div className={styles.contactFormInput}>
                         <label htmlFor="contactFormName"><span className={styles.required}>必須</span>お名前</label>
                         <br />
@@ -34,10 +39,11 @@ export default function ContactGoogleForm() {
                     <div className={styles.contactFormSubmit}>
                         <button type="submit">送信</button>
                     </div>
+                    <iframe name="hiddenIframe" id="hiddenIframe" ref={iframeRef} className={styles.iframe} onLoad={handleIframeLoad}></iframe>
                 </form>
             </div>
         )}
-        {!flag && (
+        {flag && (
             <div className={styles.thanks}>
                 <div>Thanks!</div>
             </div>
