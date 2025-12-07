@@ -111,6 +111,19 @@ export const works =
                     "technologyPath": "photoshop.svg"
                 }
             ]
+        },
+        {
+            "workName": "businessCard",
+            "pathName": "businessCard.png",
+            "description": "名刺として作成",
+            "link": "#",
+            "category": "design",
+            "technologies": [
+                {
+                    "technologyName": "illustrator",
+                    "technologyPath": "illustrator.svg"
+                }
+            ]
         }
     ]
 };
