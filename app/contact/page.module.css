@@ -3,7 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 870px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+    scrollbar-gutter: stable overlay;
 }
 
 .addressWrapper {
@@ -20,6 +24,6 @@
 
 .formWrapper {
     border: 1px solid royalblue;
-    width: 80vh;
-    height: 50vh;
+    width: 800px;
+    height: 500px;
 }
